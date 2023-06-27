@@ -1,0 +1,411 @@
+// start about page
+.about {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  min-height: 430px;
+  .aboutmaincontent {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 430px;
+    background: #000;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    .aboutOverlay {
+      width: 100%;
+      background: url(../images/about.jpg.webp);
+      background-position: center center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 125%;
+      bottom: 0;
+      z-index: -1;
+      opacity: 0.4;
+    }
+    .container {
+      .aboutContent {
+        width: 100%;
+        text-align: center;
+        margin-top: 70px;
+        .aboutTitle {
+          color: #fff;
+          font-size: 48px;
+          text-transform: uppercase;
+          font-weight: bold;
+          line-height: 1.2;
+        }
+        .changePage {
+          display: flex;
+          justify-content: center;
+          a {
+            color: #fff;
+            i {
+              padding: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// end about section
+// start change section
+
+.change {
+  width: 100%;
+  padding: 120px 0;
+  .container {
+    .changeContent {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+
+      .changeInfo {
+        width: 50%;
+        padding: 0 15px;
+        h6 {
+          font-size: 12px;
+          text-transform: uppercase;
+          color: #c6b069;
+          font-family: "Roboto", sans-serif;
+          letter-spacing: 1.2px;
+          margin-bottom: 20px;
+        }
+        h3 {
+          font-size: 36px;
+          line-height: 45px;
+          color: #222222;
+          text-transform: uppercase;
+          margin-bottom: 25px;
+          font-weight: bold;
+        }
+        h5 {
+          font-size: 16px;
+          color: #222222;
+          margin-bottom: 10px;
+          font-weight: bold;
+          line-height: 1.2;
+        }
+        a {
+          display: inline-block;
+          background: #faba00;
+          padding: 0px 35px;
+          color: #fff;
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 38px;
+          border: 1px solid #faba00;
+          border-radius: 0px;
+          text-align: center;
+          cursor: pointer;
+          transition: all 300ms linear 0s;
+          text-transform: uppercase;
+          margin-top: 40px;
+          &:hover {
+            background: transparent;
+            color: #faba00;
+          }
+        }
+      }
+    }
+  }
+  .changeImg {
+    width: 50%;
+    background-image: url(../images/about-1.jpg.webp);
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .changeImg2 {
+    background-image: url(../images/about-1.jpg.webp);
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    img {
+      width: 100%;
+    }
+  }
+}
+// end change section
+// // start gallery section
+.gallery {
+  .hoverGallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .hoverimg {
+      width: 18.23%;
+      position: relative;
+      overflow: hidden;
+      transition: all 400ms ease;
+      &:hover .owerlay {
+        bottom: 0;
+      }
+      .project {
+        width: 100%;
+      }
+      .owerlay {
+        position: absolute;
+        left: 0px;
+        bottom: -100%;
+        background: #faba00;
+        width: 100%;
+        padding: 36px;
+        transition: all 400ms ease;
+        h4 {
+          font-size: 18px;
+          font-weight: bold;
+          color: #222222;
+        }
+        p {
+          color: #222222;
+        }
+      }
+    }
+  }
+  .hoverimg:nth-child(3) {
+    width: 45%;
+    height: 100%;
+  }
+}
+// end gallery section
+// start features section
+.features {
+  width: 100%;
+  padding: 120px 0;
+  .container {
+    .featTitleContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 75px;
+      .featTitle {
+        font-size: 36px;
+        color: #222222;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      .featInfo {
+        font-size: 14px;
+        line-height: 24px;
+        max-width: 740px;
+        margin: 0 auto;
+        text-align-last: center;
+      }
+    }
+    .featCardBox {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-right: -15px;
+      margin-left: -15px;
+      .featCard {
+        width: 33%;
+        padding: 0 15px;
+        &:hover .featCardItem {
+          background-color: #fff;
+          box-shadow: 0px 5px 30px 0px rgb(0 0 0 / 10%);
+          .featCardTitle {
+            color: #faba00;
+          }
+        }
+        .featCardItem {
+          width: 100%;
+          background: #f9f9ff;
+          border-radius: 10px;
+          padding: 40px 60px 40px 40px;
+          margin-bottom: 30px;
+          transition: all 300ms linear 0s;
+          &:hover .featCardTitle {
+            color: #faba00;
+          }
+        }
+        .featCardTitle {
+          font-size: 18px;
+          color: #222222;
+          font-weight: bold;
+          margin-bottom: 20px;
+          transition: all 300ms linear 0s;
+          position: relative;
+          padding-left: 35px;
+          i {
+            font-size: 24px;
+            padding-right: 15px;
+            font-weight: 600;
+            position: absolute;
+            left: 0px;
+            top: 40%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+// end features section
+// start clients section
+.clients {
+  width: 100%;
+  height: 310px;
+  padding: 120px 0;
+  background-color: #f9f9ff;
+  .overlayClients {
+    width: 100%;
+  }
+  .container {
+    .clientsBox {
+      width: 100%;
+      display: flex;
+      .clientLogo {
+        width: 100%;
+        height: 100%;
+        img {
+          width: auto;
+          text-align: center;
+          display: block;
+          margin: auto;
+          line-height: 70px;
+          opacity: 0.5;
+          transition: all 300ms linear 0s;
+        }
+      }
+    }
+  }
+}
+// end clients section
+
+@media (max-width: 1199px) {
+  .change {
+    .container {
+      width: 90%;
+      .changeContent {
+        width: 95%;
+      }
+    }
+  }
+}
+@media (min-width: 998px) {
+  .change {
+    .container {
+      .changeContent {
+        .changeImg {
+          display: block;
+        }
+        .changeImg2 {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 998px) {
+  .change {
+    .container {
+      width: 80%;
+      .changeContent {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        .changeInfo {
+          width: 100%;
+        }
+        .changeImg {
+          display: none;
+        }
+        .changeImg2 {
+          display: block;
+          width: 100%;
+
+          margin-top: 5%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .change {
+    .container {
+      width: 100%;
+      .changeContent {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        .changeInfo {
+          width: 100%;
+
+          h3 {
+            font-size: 36px;
+            br {
+              display: none;
+            }
+          }
+        }
+        .changeImg {
+          display: none;
+        }
+        .changeImg2 {
+          width: 100%;
+          padding: 0 15px;
+          margin-top: 5%;
+        }
+      }
+    }
+  }
+  .gallery {
+    .hoverGallery {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      .hoverimg {
+        width: 100%;
+
+        .project {
+          width: 100%;
+          height: 100%;
+        }
+        .owerlay {
+          display: none;
+        }
+      }
+    }
+  }
+  .features {
+    padding: 50px 0;
+
+    .container {
+      .featTitleContent {
+        text-align: center;
+        .featTitle {
+          font-size: 30px;
+          line-height: 1.2;
+        }
+      }
+      .featCardBox {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        .featCard {
+          width: 50%;
+          margin-bottom: 3%;
+
+          .featCardItem {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

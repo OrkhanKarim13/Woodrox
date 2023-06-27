@@ -1,0 +1,776 @@
+.home {
+  background-image: url(../images/home.jpg.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    .homeRow {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .homeContent {
+        width: 67%;
+        display: flex;
+        flex-direction: column;
+        .contentTitle {
+          width: 67%;
+          height: 30%;
+          color: #fff;
+          font-weight: bold;
+          line-height: 47px;
+          margin-bottom: 20px;
+          text-align: left;
+        }
+        .contentInfo {
+          text-align: left;
+          max-width: 80%;
+          max-height: 40%;
+          color: #fff;
+          margin-bottom: 35px;
+        }
+        .homeBtn {
+          display: inline-block;
+          background: #faba00;
+          color: #fff;
+          width: 148px;
+          font-size: 14px;
+          font-weight: 500;
+          border: 1px solid #faba00;
+          line-height: 48px;
+          border-radius: 3px;
+          text-align: center;
+          cursor: pointer;
+          transition: all 300ms linear 0s;
+        }
+      }
+      .bSide {
+        margin-right: -15px;
+        width: 35%;
+        height: 100%;
+        padding: 0 15px;
+        .bSideMenu {
+          width: 100%;
+          height: 530px;
+          padding: 30px;
+          margin: 210px 0;
+          background-color: rgba(255, 255, 255, 0.1);
+          border-radius: 10px;
+          display: flex;
+          flex-wrap: wrap;
+          .boxItem {
+            width: 50%;
+            height: 33%;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+            &:hover {
+              background-color: #faba00;
+              transition: 0.3s;
+            }
+          }
+          .icons {
+            font-size: 250%;
+            color: #fff;
+          }
+        }
+        .boxItem:nth-child(1) {
+          border-right: 1px solid rgba(255, 255, 255, 0.1);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .boxItem:nth-child(2) {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .boxItem:nth-child(3) {
+          border-right: 1px solid rgba(255, 255, 255, 0.1);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .boxItem:nth-child(4) {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .boxItem:nth-child(5) {
+          border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+      }
+    }
+  }
+}
+// end home section
+
+// start furnitures section
+.furnitures {
+  width: 100%;
+  padding: 120px 0;
+  background-color: #f9f9ff;
+  .container {
+    .furnContent {
+      text-align: center;
+      margin-bottom: 75px;
+      .furnTitle {
+        font-size: 36px;
+        color: #222222;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+    .furnInfo {
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      line-height: 24px;
+      color: #777777;
+      margin-bottom: 0px;
+      max-width: 740px;
+      margin: auto;
+      text-align-last: center;
+    }
+    .furnCardBox {
+      width: 100%;
+      display: flex;
+      .furnCard {
+        width: 33%;
+        background-color: #f9f9ff;
+        padding: 0 15px;
+        margin-bottom: 30px;
+        &:hover .furnCardTitle {
+          color: #faba00;
+        }
+      }
+      img {
+        border-radius: 5px;
+        width: 100%;
+      }
+      .furnCardTitle {
+        font-size: 18px;
+        font-weight: bold;
+        color: #222222;
+        margin-bottom: 12px;
+        transition: all 300ms linear 0s;
+        margin: 25px 0 12px;
+      }
+      .furnCardInfo {
+        color: #777777;
+      }
+    }
+  }
+}
+
+// end furnitures section
+// start gallery section
+.gallery {
+  .hoverGallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .hoverimg {
+      width: 18.23%;
+      position: relative;
+      overflow: hidden;
+      transition: all 400ms ease;
+      &:hover .owerlay {
+        bottom: 0;
+      }
+      .project {
+        width: 100%;
+        height: 100%;
+      }
+      .owerlay {
+        position: absolute;
+        left: 0px;
+        bottom: -100%;
+        background: #faba00;
+        width: 100%;
+        padding: 36px;
+        transition: all 400ms ease;
+        h4 {
+          font-size: 18px;
+          font-weight: bold;
+          color: #222222;
+        }
+        p {
+          color: #222222;
+        }
+      }
+    }
+  }
+  .hoverimg:nth-child(3) {
+    width: 45%;
+    height: 100%;
+  }
+}
+// end gallery section
+// start features section
+.features {
+  width: 100%;
+  padding: 120px 0;
+  .container {
+    .featTitleContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 75px;
+      .featTitle {
+        font-size: 36px;
+        color: #222222;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      .featInfo {
+        font-size: 14px;
+        line-height: 24px;
+        max-width: 740px;
+        margin: 0 auto;
+        text-align-last: center;
+      }
+    }
+    .featCardBox {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-right: -15px;
+      margin-left: -15px;
+      .featCard {
+        width: 33%;
+        padding: 0 15px;
+        &:hover .featCardItem {
+          background-color: #fff;
+          box-shadow: 0px 5px 30px 0px rgb(0 0 0 / 10%);
+          .featCardTitle {
+            color: #faba00;
+          }
+        }
+        .featCardItem {
+          width: 100%;
+          background: #f9f9ff;
+          border-radius: 10px;
+          padding: 40px 60px 40px 40px;
+          margin-bottom: 30px;
+          transition: all 300ms linear 0s;
+          &:hover .featCardTitle {
+            color: #faba00;
+          }
+        }
+        .featCardTitle {
+          font-size: 18px;
+          color: #222222;
+          font-weight: bold;
+          margin-bottom: 20px;
+          transition: all 300ms linear 0s;
+          position: relative;
+          padding-left: 35px;
+          i {
+            font-size: 24px;
+            padding-right: 15px;
+            font-weight: 600;
+            position: absolute;
+            left: 0px;
+            top: 40%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+// end features section
+
+// start quality section
+.quality {
+  width: 100%;
+  padding: 120px 0;
+  background-image: url(../images/quality-bg.jpg.webp);
+  background-position: center;
+  background-size: cover;
+  .container {
+    .qualityContent {
+      width: 100%;
+      text-align: center;
+      .qualityTitle {
+        font-size: 36px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 1.3;
+      }
+      .qualityInfo {
+        max-width: 530px;
+        margin: 0px auto 35px;
+        color: #fff;
+      }
+      .readBtn {
+        display: inline-block;
+        background: #faba00;
+        padding: 0px 35px;
+        color: #fff;
+        font-family: "Heebo", sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 38px;
+        border: 1px solid #faba00;
+        border-radius: 0px;
+        outline: none !important;
+        box-shadow: none !important;
+        text-align: center;
+        cursor: pointer;
+        transition: all 300ms linear 0s;
+        &:hover {
+          background: transparent;
+          color: #faba00;
+        }
+      }
+    }
+  }
+}
+// end quality section
+
+// start blog section
+
+.ourBlog {
+  width: 100%;
+  padding: 120px 0;
+  .container {
+    .blogTitle {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 75px;
+      h2 {
+        line-height: 1.2;
+        font-size: 36px;
+        color: #222222;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        line-height: 24px;
+        color: #777777;
+        margin-bottom: 0px;
+        max-width: 740px;
+        margin: auto;
+      }
+    }
+    .blogCardBox {
+      width: 100%;
+      display: flex;
+      margin-right: -15px;
+      margin-left: -15px;
+      .blogCard {
+        width: 33%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        .blogCardContent {
+          width: 100%;
+          .blogCardInfo {
+            margin-top: 30px;
+            .blogCardBtn {
+              margin-bottom: 25px;
+              a {
+                border: 1px solid #eeeeee;
+                display: inline-block;
+                border-radius: 0px;
+                line-height: 28px;
+                padding: 0px 20px;
+                font-size: 12px;
+                font-weight: normal;
+                color: #222222;
+                transition: all 300ms linear 0s;
+              }
+              .travel {
+                background: #faba00;
+                border-color: #faba00;
+                color: #fff;
+              }
+              .life {
+                &:hover {
+                  background: #faba00;
+                  border-color: #faba00;
+                  color: #fff;
+                }
+              }
+            }
+            .blogCardTitle {
+              color: #222222;
+              font-size: 21px;
+              line-height: 24px;
+              margin-bottom: 15px;
+              transition: all 300ms linear 0s;
+              font-weight: bold;
+              &:hover {
+                color: #faba00;
+              }
+            }
+            .blogCardInfo {
+              max-width: 320px;
+              margin-bottom: 15px;
+              color: #777777;
+            }
+            .blogCardDate {
+              color: #222222;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// end blog section
+
+// start clients section
+.clients {
+  width: 100%;
+  padding: 120px 0;
+  background-color: #f9f9ff;
+  .overlayClients {
+    width: 100%;
+  }
+  .container {
+    .clientsBox {
+      width: 100%;
+      display: flex;
+      .clientLogo {
+        width: 100%;
+
+        img {
+          width: auto;
+          text-align: center;
+          display: block;
+          margin: auto;
+          line-height: 70px;
+          opacity: 0.5;
+          transition: all 300ms linear 0s;
+        }
+      }
+    }
+  }
+}
+// end clients section
+
+// ---------------------------------------
+
+@media (max-width: 1199px) {
+  .home {
+    .container {
+      .homeRow {
+        .homeContent {
+          .contentTitle {
+            font-size: 36px;
+            line-height: 45px;
+            br {
+              display: none;
+              font-size: 36px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .features {
+    padding: 50px 0;
+    height: min-content !important;
+    .container {
+      .featTitleContent {
+        text-align: center;
+        .featTitle {
+          font-size: 30px;
+          line-height: 1.2;
+        }
+      }
+      .featCardBox {
+        width: 100%;
+        align-items: center;
+        .featCard {
+          width: 50%;
+          .featCardItem {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .gallery {
+    .hoverGallery {
+      .hoverimg:nth-child(3) {
+        display: none;
+      }
+      .hoverimg {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+      }
+    }
+  }
+  .ourBlog {
+    .container {
+      .blogCardBox {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .blogCard {
+          width: 50%;
+          padding-top: 5%;
+
+          .blogCardContent {
+            width: 100%;
+
+            .blogCardInfo {
+              .blogCardBtn {
+                display: block;
+              }
+              .blogCardTitle {
+                color: #222222;
+                font-size: 21px;
+                line-height: 24px;
+                margin-bottom: 15px;
+                font-weight: bold;
+              }
+              .blogCardDate {
+                margin-bottom: 5%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 998px) {
+  .home {
+    width: 100%;
+    height: min-content;
+    .container {
+      width: 66%;
+      margin: 0 auto;
+      .homeRow {
+        width: 100%;
+        flex-direction: column;
+        .homeContent {
+          width: 100%;
+          margin-top: 25%;
+          .contentTitle {
+            width: 100%;
+          }
+          .contentInfo {
+            margin-bottom: 35px;
+            max-width: 555px;
+          }
+        }
+        .bSide {
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          .bSideMenu {
+            width: 100%;
+            .boxItem {
+              i {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .furnitures {
+    .container {
+      .furnContent {
+        width: 100%;
+        .furnTitle {
+          font-size: 30px;
+          line-height: 1.2;
+        }
+      }
+      .furnCardBox {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        .furnCard {
+          width: 70%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .features {
+    padding: 50px 0;
+    height: min-content !important;
+    .container {
+      .featTitleContent {
+        text-align: center;
+        .featTitle {
+          font-size: 30px;
+          line-height: 1.2;
+        }
+      }
+      .featCardBox {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        .featCard {
+          width: 50%;
+          margin-bottom: 3%;
+
+          .featCardItem {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .ourBlog {
+    .container {
+      .blogCardBox {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        .blogCard {
+          width: 100%;
+          padding: 0;
+
+          .blogCardContent {
+            width: 100%;
+
+            .blogCardInfo {
+              .blogCardBtn {
+                display: block;
+              }
+              .blogCardTitle {
+                color: #222222;
+                font-size: 21px;
+                line-height: 24px;
+                margin-bottom: 15px;
+                font-weight: bold;
+              }
+              .blogCardDate {
+                margin-bottom: 5%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .clients {
+    .container {
+      .clientsBox {
+        width: 100%;
+        .clientLogo:nth-child(3) {
+          display: none;
+        }
+        .clientLogo:nth-child(4) {
+          display: none;
+        }
+        .clientLogo {
+          flex: 0 0 33.33%;
+          max-width: 33.33%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .home {
+    .container {
+      width: 100%;
+      .homeRow {
+        padding: 20% 0;
+        .homeContent {
+          padding: 0 15px;
+        }
+        .bSide {
+          display: none;
+        }
+      }
+    }
+  }
+  .furnitures {
+    width: 100%;
+    padding: 70px 0;
+    .container {
+      width: 100%;
+      .furnContent {
+        width: 100%;
+        .furnTitle {
+          font-size: 25px;
+          font-weight: bold;
+          margin-bottom: 15px;
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+  .gallery {
+    padding: 50px 0;
+    .hoverGallery {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      .hoverimg {
+        width: 100%;
+
+        .project {
+          width: 100%;
+          height: 100%;
+        }
+        .owerlay {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .features {
+    width: 100%;
+    padding: 70px 0;
+    .container {
+      width: 100%;
+      .featTitleContent {
+        .featTitle {
+          font-size: 25px;
+          font-weight: bold;
+        }
+      }
+      .featCardBox {
+        margin: 0;
+
+        .featCard {
+          width: 100%;
+          padding: 0;
+          margin-bottom: 10px;
+          .featCardItem {
+            .featCardInfo {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .ourBlog {
+    .container {
+      .blogTitle {
+        h2 {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
